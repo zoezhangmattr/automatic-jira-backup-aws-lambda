@@ -1,0 +1,7 @@
+.terraform
+terraform.tfstate*
+*.zip
+test.sh
+.terraform.lock.hcl
+infra/layer
+infra/testing.tfvars
