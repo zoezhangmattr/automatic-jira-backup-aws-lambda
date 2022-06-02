@@ -12,7 +12,6 @@ resource "aws_lambda_function" "this" {
   layers = [
     aws_lambda_layer_version.requests.arn
   ]
-  # reserved_concurrent_executions = 1
   environment {
     variables = merge({
       SSM_PREFIX     = var.ssm_prefix_path
